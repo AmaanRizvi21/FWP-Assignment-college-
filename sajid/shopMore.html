@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Jewelry Showcase</title>
+  <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      /* font-family: 'Segoe UI', sans-serif; */
+      background-color: #fffaf3;
+     /* font-family: 'Times New Roman', Times, serif; */
+    }
+
+    .header {
+      background-color: #000000;
+    
+      padding: 25px;
+      text-align: center;
+      color: white;
+      font-size: 25px;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(460px, 1fr));
+      gap: 30px;
+      padding: 40px;
+    }
+
+    .card2 {
+      background: white;
+      border-radius: 16px;
+      padding: 20px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    }
+
+    .card2:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    }
+
+    .card2 img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin-bottom: 15px;
+    }
+
+    .card2 h3 {
+      font-size: 20px;
+      margin: 10px 0;
+      color: #222;
+    }
+
+    .card2:nth-child(1) {
+      background: #fff6e0;
+    }
+
+    .card2:nth-child(2) {
+      background: #f0f8ff;
+    }
+
+    .card2:nth-child(3) {
+      background: #fff0f5;
+    }
+
+    .card2:nth-child(4) {
+      background: #f9f5ff;
+    }
+
+    .card2:nth-child(5) {
+      background: #fef7f1;
+    }
+    h2{
+     font-family: 'Times New Roman', Times, serif;
+    }
+  </style>
+</head>
+<body>
+
+     <!-- header section -->
+
+     <nav class="navbar navbar-expand-lg navbar-light navbar-custom">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img
+              src="../images/logo-removebg-preview.png"
+              alt="Logo"
+              width="60"
+              height="60"
+              class="d-inline-block align-text-top me-2"
+            />
+            <span class="brand-name">Shalis</span>
+          </a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto nav-links">
+              <li class="nav-item">
+                <a class="nav-link active" href="../index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../aqsa/bag.html">Bags</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../zunaira/jewelry.html">Jewelry</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../contact.html">Contact</a>
+              </li>
+              <li class="nav-item bothIconAndCount">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                <span id="cartCount">+0</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+  <!-- Latest Products -->
+  <section class="container my-5" id="products">
+    <h1   class="text-center mb-4">Latest Products</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+      <div class="col">
+        <a href="../pendent.html" style="all: unset;">
+        <div class="card latest-card">
+          <img src="../images/pendent.jpg" class="card-img-top" alt="Product 1" />
+          <div class="card-body">
+            <h5 class="card-title">Elegant Pendent</h5>
+            <!-- <p class="card-text">&#8377 41,999</p> -->
+             <p class="product-price">
+              <span class="discounted-price">&#8377 41,999</span>
+              <span class="original-price">&#8377 49,999</span>
+             </p>
+            <!-- <p style="font-size: large;">Pure elegance, perfectly crafted.</p> -->
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <div class="col">
+        <a href="../bag.html" style="all: unset;">
+        <div class="card latest-card">
+          <img src="../images/bag.jpg" class="card-img-top" alt="Product 3" />
+          <div class="card-body">
+            <h5 class="card-title">Leather Bag</h5>
+            <!-- <p class="card-text">&#8377 14,999</p> -->
+            <p class="product-price">
+              <span class="discounted-price">&#8377 14,999</span>
+              <span class="original-price">&#8377 19,999</span>
+             </p>
+            <!-- <a href="bag.html" class="btn btn-primary">View</a> -->
+          </div>
+        </div>
+      </a>
+      </div>
+
+      <div class="col">
+        <a href="../bracelet.html" style="all: unset;">
+        <div class="card latest-card">
+          <img src="../images/bracelet.jpg" class="card-img-top" alt="Product 2" />
+          <div class="card-body">
+            <h5 class="card-title">Silver Bracelet</h5>
+            <!-- <p class="card-text">&#8377 21,999</p> -->
+            <p class="product-price">
+              <span class="discounted-price">&#8377 21,999</span>
+              <span class="original-price">&#8377 34,999</span>
+             </p>
+            <!-- <a href="bracelet.html" class="btn btn-primary">View</a> -->
+          </div>
+        </div>
+      </a>
+      </div>
+    </div>
+    
+  </section>
+
+  <div class="header">Cute, Classy and Completely You</div>
+
+  <div class="grid-container">
+    <div class="card2">
+      <!-- All -->
+      <img src="../zunaira/images/gold bracelet.jpg" alt="Gold Bracelet">
+      <h3>Gold Bracelet</h3>
+      <span class="discounted-price">&#8377 50,999</span>
+    </div>
+
+    <div class="card2">
+      <img src="../zunaira/images/rhinestones.jpg" alt="Rhinestone Bracelet">
+      <h3>Rhinestone Bracelet</h3>
+      <span class="discounted-price">&#8377 12,999</span>
+    </div>
+
+    <div class="card2">
+      <img src="../zunaira/images/elegant bracelet.jpg" alt="Elegant Bracelet">
+      <h3>Elegant Bracelet</h3>
+      <span class="discounted-price">&#8377 90,000</span>
+    </div>
+
+    <div class="card2">
+      <img src="../zunaira/images/studs.jpg" alt="Earrings Stud">
+      <h3>Earrings Stud</h3>
+      <span class="discounted-price">&#8377 12,999</span>
+    </div>
+
+    <div class="card2">
+      <img src="../zunaira/images/twister.jpg" alt="Twister Earrings Stud">
+      <h3>Twister Earrings Stud</h3>
+      <span class="discounted-price">&#8377 64,999</span>
+    </div>
+  <!-- </div> -->
+
+
+  <!-- row2 -->
+  <!-- <div class="grid-container"> -->
+    <div class="card2">
+      <img src="../aqsa/images/midnight muse.jpg" alt="Gold Bracelet">
+      <h3>Midnight Muse</h3>
+      <span class="discounted-price">&#8377 67,999</span>
+  
+    </div>
+
+    <div class="card2">
+      <img src="../aqsa/images/aqua mist.jpg" alt="Rhinestone Bracelet">
+      <h3>Aqua Mist</h3>
+      <span class="discounted-price">&#8377 45,999</span>
+    </div>
+
+    <div class="card2">
+      <img src="../aqsa/images/silken dove.jpg" alt="Elegant Bracelet">
+      <h3>Silken Dove</h3>
+      <span class="discounted-price">&#8377 50,699</span>
+    </div>
+
+    <div class="card2">
+      <img src="../aqsa/images/black mirage.jpg" alt="Earrings Stud">
+      <h3>Black Mirage</h3>
+      <span class="discounted-price">&#8377 39,999</span>
+    </div>
+
+    <div class="card2">
+      <img src="../aqsa/images/sablesoul.jpg" alt="Twister Earrings Stud">
+      <h3>Sable Soul</h3>
+      <span class="discounted-price">&#8377 49,999</span>
+      
+    </div>
+  </div>
+
+
+  <!-- Footer -->
+  <footer class="bg-light text-center text-lg-start">
+    <div class="container p-4">
+      <div class="row">
+        <!-- About -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase f-h">Shalis by Aqsa</h5>
+          <p class="f-c">
+            Elegant handcrafted jewelry and bags for every special moment.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase f-h">Quick Links</h5>
+          <ul class="list-unstyled mb-0">
+            <li><a href="#home" class="text-dark f-c">Home</a></li>
+            <li><a href="#products" class="text-dark f-c">Products</a></li>
+            <li><a href="#contact" class="text-dark f-c">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact -->
+        <div class="col-lg-4 col-md-12 mb-4 mb-md-0">
+          <h5 class="text-uppercase f-h">Contact</h5>
+          <p class="f-c">Email: info@shaliscraf.com</p>
+          <p class="f-c">Phone: +91 18001 800440</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-dark text-white">
+      © 2025 Shalis Sellers<br />Developed by Sajid Raza <br>sajidraza777@gmail.com
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+
+</body>
+</html>

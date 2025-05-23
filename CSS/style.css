@@ -1,0 +1,255 @@
+/* .navbar-custom {
+  background-color: rgb(255, 255, 2, 0.1);
+} */
+
+/* body {
+  background-color: black;
+} */
+
+.latest-card {
+  transition: transform 0.21s ease-in-out;
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.latest-card {
+  overflow: hidden; /* To ensure the image does not overflow outside the container */
+}
+
+.card-img-container {
+  position: relative;
+  overflow: hidden; /* Hide the overflowed part of the image */
+}
+
+.latest-card img {
+  transition: transform 0.3s ease-in-out;
+  width: 100%; /* To ensure image fits container initially */
+}
+
+.latest-card:hover .card-img-container {
+  transform: scale(1.05); /* This will zoom the entire container */
+}
+
+.latest-card:hover img {
+  transform: scale(1.05); /* Image will scale inside the container */
+}
+
+.list-unstyled a {
+  text-decoration: none !important;
+}
+
+.f-h {
+  font-size: 85%;
+}
+
+.f-c {
+  font-size: 80%;
+}
+
+/* gpt */
+.navbar-custom {
+  background-color: #fbe3ed;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding: 20px;
+}
+
+.brand-name {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-family: "Poppins", sans-serif;
+  color: #222;
+}
+
+.nav-links .nav-link {
+  margin-left: 1.5rem;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  color: #333;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+.nav-links .nav-link:hover {
+  color: #b68d40;
+  transform: scale(1.05);
+}
+
+/* latest-products price */
+
+/* .product-price {
+  font-size: 1.1rem;
+  margin: 0;
+} */
+
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  font-size: 80%;
+  margin-left: 2px;
+}
+
+.discounted-price {
+  font-weight: 500;
+}
+
+/* shop.html styling */
+body {
+  font-family: "Segoe UI", sans-serif;
+  /* background-color: #f9f9f9; */
+  background-color: #fff6f8;
+}
+.product-container {
+  padding: 50px 0;
+}
+.product-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.product-img:hover {
+  transform: scale(1.05);
+}
+.product-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.product-price {
+  font-size: 1.5rem;
+  margin: 15px 0;
+}
+.original-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-right: 10px;
+}
+.discounted-price {
+  color: #000;
+  font-weight: bold;
+}
+.product-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+.btn-buy {
+  background-color: #222;
+  color: white;
+  padding: 10px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  margin-right: 15px;
+}
+.btn-cart {
+  border: 2px solid #222;
+  padding: 10px 30px;
+  border-radius: 25px;
+  font-size: 1rem;
+}
+
+/* show more list */
+#moreReviews {
+  /* max-height: 0; */
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+}
+#moreReviews.show {
+  max-height: 200px; /*enough height to fit all reviews*/
+}
+
+/* btn */
+.btn-link-style {
+  background: none;
+  border: none;
+  color: #007bff;
+  text-decoration: underline;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+  font-weight: 500;
+}
+
+.btn-link-style:hover {
+  color: #0056b3;
+  text-decoration: none;
+}
+
+/* cart icon styling */
+/* .cart-icon {
+ 
+  font-size: 1.3rem;
+  color: #333;
+  margin-top: 15px;
+  margin-left: 35px;
+  cursor: pointer;
+  margin-right: 0;
+}
+
+#cartCount {
+  background-color: red;
+  border-radius: 50%;
+  color: white;
+  margin-left: 0;
+} */
+
+.bothIconAndCount {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-left: 25px;
+  transition: 0.2s linear;
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.cart-icon {
+  font-size: 1.4rem;
+  color: #333;
+  cursor: pointer;
+}
+
+#cartCount {
+  background-color: rgb(254, 187, 198);
+  border-radius: 50%;
+  margin-top: 5px;
+}
+
+/* customerReviews */
+.customerReviews {
+  background-color: rgba(255, 168, 180, 0.099) !important;
+}
+
+/* show more btn */
+.btn-primary {
+  background-color: #aa60c8 !important;
+  border: none !important;
+  color: white !important;
+  padding: 10px 20px !important;
+  border-radius: 5px !important;
+  font-size: 1rem !important;
+  cursor: pointer !important;
+  transition: background-color 0.3s ease !important;
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+  margin-left: 20px !important;
+  margin-right: 20px !important;
+
+  text-align: center !important;
+  /* display: block !important; */
+  text-decoration: none !important;
+  font-weight: 500 !important;
+  text-transform: uppercase !important;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
+  border-radius: 8px !important;
+  font-family: "Poppins", sans-serif !important;
+  &:hover {
+    background-color: #9a4db6 !important;
+  }
+}
